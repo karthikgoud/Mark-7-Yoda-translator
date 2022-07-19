@@ -1,12 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
+
+*{
+    margin: 0;
+}
+
 body{
     font-family: 'Roboto Slab', serif;
-
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 
 main{
@@ -59,12 +64,6 @@ input{
 }
 
 #output-div{
-    /* display: none; */
-    /* width: 600px;
-    height: 100px;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px; */
     font-size: 2rem;
 
 }
@@ -77,5 +76,9 @@ button{
     font-weight: 700;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
+}
 
+button:hover{
+    background-color: cornflowerblue;
 }
