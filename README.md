@@ -1,5 +1,9 @@
 # Mark-7-Yoda-translator
-Mark-7-Yoda translato
+Mark-7-Yoda translator
+
+Type your text below to convert to Yodish using our Yoda Speak translator using vanilla javascript
+
+Sample phrase : Master Obiwan has lost a planet.
 
 # live link :
 https://yoda-translator-rvk.netlify.app/
