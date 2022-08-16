@@ -16,13 +16,18 @@ function translate() {
   var inputText = document.querySelector("input").value;
 
   fetch(finalFetchURL(inputText))
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Too many requests.Please try after some time.");
+      }
+      return res.json();
+    })
     .then((data) => {
       // console.log(data);
       outputDiv.textContent = data.contents.translated;
       displayYoda.style.display = "block";
     })
     .catch((err) => {
-      outputDiv.innerText = "error : " + err;
+      outputDiv.textContent = err;
     });
 }
