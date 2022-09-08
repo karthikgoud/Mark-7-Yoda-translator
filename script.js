@@ -15,19 +15,24 @@ btnTranslate.addEventListener("click", translate);
 function translate() {
   var inputText = document.querySelector("input").value;
 
-  fetch(finalFetchURL(inputText))
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error("Too many requests.Please try after some time.");
-      }
-      return res.json();
-    })
-    .then((data) => {
-      // console.log(data);
-      outputDiv.textContent = data.contents.translated;
-      displayYoda.style.display = "block";
-    })
-    .catch((err) => {
-      outputDiv.textContent = err;
-    });
+  if (inputText) {
+    fetch(finalFetchURL(inputText))
+      .then((res) => {
+        console.log(res);
+        if (!res.ok) {
+          throw new Error(" Too many requests. Please try after some time.");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        // console.log(data);
+        outputDiv.textContent = data.contents.translated;
+        displayYoda.style.display = "block";
+      })
+      .catch((err) => {
+        outputDiv.textContent = "❌" + err + "❌";
+      });
+  } else {
+    alert("Please enter text to Translate.");
+  }
 }
