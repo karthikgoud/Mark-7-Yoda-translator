@@ -4,6 +4,7 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -11,7 +12,8 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;    
+    height: 100vh;
 }
 
 main{
@@ -20,6 +22,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    /* height: 70vh; */
 
 }
 
@@ -65,6 +68,7 @@ input{
 
 #output-div{
     font-size: 2rem;
+    color: darkblue;
 
 }
 
@@ -81,4 +85,18 @@ button{
 
 button:hover{
     background-color: cornflowerblue;
+}
+
+footer{
+    background-color: rgb(202, 230, 239);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+footer p {
+    width: 50%;
+    font-size: 0.8rem;
 }
