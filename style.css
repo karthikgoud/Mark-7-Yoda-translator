@@ -9,7 +9,8 @@
 
 :root{
     --header-footer-bg:#051825;
-    --main-bg:#092940;
+    /* --main-bg:#092940; */
+    --main-bg:white;
 }
 
 body{
@@ -58,7 +59,7 @@ img{
 
 }
 
-#img-div{
+.img-div{
     display: none;
     margin-bottom: 0.5rem;
 }
@@ -71,28 +72,40 @@ input{
     font-size: 1.6rem;
     border: 2px solid darkorange;
     border-radius: 6px;
-    
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #output-div{
+    width: 40%;
     font-size: 2rem;
-    color: white;
-
+    color: darkslategray;
+    padding: 0.6rem;
+    box-shadow: 0px 0px 10px gray;
+    margin: 0 1.4rem ;
+    display: none;
 }
 
 button{
     background-color: lightcoral;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1.2rem;
     color: white;
     font-weight: 700;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+
 }
 
 button:hover{
+    color: black;
     background-color: cornflowerblue;
+
 }
 
 footer{
