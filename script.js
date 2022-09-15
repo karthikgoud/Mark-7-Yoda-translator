@@ -1,6 +1,6 @@
 var btnTranslate = document.querySelector("button");
 var outputDiv = document.querySelector("#output-div");
-const displayYoda = document.querySelector("#img-div");
+const displayYoda = document.querySelectorAll(".img-div");
 
 var serverURL = "https://api.funtranslations.com/translate/yoda.json";
 
@@ -26,10 +26,13 @@ function translate() {
       })
       .then((data) => {
         // console.log(data);
+        outputDiv.style.display = "block";
         outputDiv.textContent = data.contents.translated;
-        displayYoda.style.display = "block";
+        displayYoda[0].style.display = "block";
+        displayYoda[1].style.display = "block";
       })
       .catch((err) => {
+        outputDiv.style.display = "block";
         outputDiv.textContent = "❌" + err + "❌";
       });
   } else {
