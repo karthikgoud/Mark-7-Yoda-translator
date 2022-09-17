@@ -116,8 +116,53 @@ footer{
     align-items: center;
     gap: 0.6rem;
 }
+
 footer p {
     width: 50%;
     font-size: 0.8rem;
     padding: 0.4rem;
+
+}
+
+/* media queries */
+
+@media (max-width:426px){
+    header h1{
+        padding: 0.8rem 1rem;
+        font-size: 1.8rem;
+        color: red;
+    }
+
+    input{
+        width: 60%;
+    }
+
+    button{
+        width: 60%;
+        font-size: 1rem;
+
+    }
+
+    footer p{
+        width: 90%;
+        font-size: 0.6rem;
+    }
+
+    .result{
+        flex-direction: column;
+    }
+
+    img{
+        height: 60px;
+    }
+
+    #output-div{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.4rem;
+        margin: 0.6rem 1rem ;
+
+    }
+
+
 }
