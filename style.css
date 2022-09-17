@@ -30,7 +30,6 @@ main{
     gap: 2rem;
     height: 100vh;
     background-color: var(--main-bg);
-
 }
 
 header{
@@ -43,19 +42,19 @@ header{
 }
 
 h1{
-    font-size: 2.6rem; ;
+    font-size: 3rem; ;
     color: white;
+    padding: 0 2rem;
 }
 
-#yoda-heading{
-    width: 3rem;
+.yoda-heading{
+    width: 5rem;
     height: min-content;
     display: inline-block;
 }
 
 img{
     height: 150px;
-
 }
 
 .img-div{
@@ -117,9 +116,13 @@ footer{
     gap: 0.6rem;
 }
 
+footer h4{
+    font-size: 1.6rem;
+}
+
 footer p {
     width: 50%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.4rem;
 
 }
@@ -127,20 +130,34 @@ footer p {
 /* media queries */
 
 @media (max-width:426px){
+
+    .yoda-heading{
+        width: 3rem;
+
+    }
+
     header h1{
-        padding: 0.8rem 1rem;
-        font-size: 1.8rem;
-        color: red;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    main{
+        justify-content: space-around;
     }
 
     input{
         width: 60%;
+        font-size: 0.8rem;
     }
 
     button{
         width: 60%;
         font-size: 1rem;
 
+    }
+
+    footer h4{
+        font-size: 1rem;
     }
 
     footer p{
@@ -153,7 +170,7 @@ footer p {
     }
 
     img{
-        height: 60px;
+        height: 100px;
     }
 
     #output-div{
